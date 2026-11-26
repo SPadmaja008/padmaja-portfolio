@@ -30,6 +30,8 @@ export interface Project {
   image_url: string | null;
   github_url: string | null;
   live_url: string | null;
+  demo_url: string | null;
+  docs_url: string | null;
   sort_order: number;
   created_at: string;
 }
@@ -89,6 +91,8 @@ export interface DocumentItem {
   file_date: string;
   file_url: string | null;
   file_type: 'pdf' | 'image';
+  file_size: number | null;
+  mime_type: string | null;
   sort_order: number;
   created_at: string;
 }
